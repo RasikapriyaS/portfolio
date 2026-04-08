@@ -1,29 +1,21 @@
-// script.js
-
-// Smooth scrolling for navigation links
+// Smooth Scroll
 document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+    anchor.addEventListener('click', function(e) {
         e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        document.querySelector(this.getAttribute('href'))
+            .scrollIntoView({ behavior: 'smooth' });
     });
 });
 
-// Optional: Scroll-triggered animations (simple fade-in effect)
+// Scroll Animation
 window.addEventListener('scroll', function() {
-    const elements = document.querySelectorAll('.about, .skills, .projects, .contact');
-    const windowHeight = window.innerHeight;
+    const sections = document.querySelectorAll('.about, .skills, .projects, .contact');
+    const triggerBottom = window.innerHeight * 0.85;
 
-    elements.forEach(element => {
-        const elementTop = element.getBoundingClientRect().top;
-        const elementVisible = 150;
-
-        if (elementTop < windowHeight - elementVisible) {
-            element.classList.add('active');
-        } else {
-            element.classList.remove('active');
+    sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if(sectionTop < triggerBottom){
+            section.classList.add('active');
         }
     });
 });
