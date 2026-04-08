@@ -1,24 +1,23 @@
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    background: #f5f7fa;
-    color: #333;
+    background-color: #f9fafb;
+    color: #1f2937;
     scroll-behavior: smooth;
 }
 
+/* Header */
 header {
-    background: #111827;
+    background-color: #111827;
     padding: 15px 0;
     position: sticky;
     top: 0;
-    z-index: 1000;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 0;
     padding: 0;
 }
 
@@ -27,7 +26,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-weight: 500;
 }
@@ -36,90 +35,87 @@ nav ul li a:hover {
     color: #38bdf8;
 }
 
+/* Home */
 .home {
-    background: linear-gradient(135deg, #0f172a, #1e293b);
+    background: linear-gradient(to right, #1f2937, #111827);
     color: white;
     text-align: center;
-    padding: 140px 20px;
-}
-
-.subtitle {
-    color: #38bdf8;
-    font-weight: 600;
+    padding: 120px 20px;
 }
 
 .highlight {
     color: #38bdf8;
 }
 
-.profile-pic {
-    width: 160px;
-    border-radius: 50%;
-    margin: 20px 0;
-    border: 4px solid #38bdf8;
-}
-
 .btn {
-    background: #38bdf8;
-    color: white;
-    padding: 10px 25px;
-    border-radius: 6px;
-    text-decoration: none;
     display: inline-block;
-    margin-top: 10px;
-    transition: 0.3s;
+    margin-top: 20px;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
 }
 
 .btn:hover {
-    background: #0284c7;
+    background-color: #1d4ed8;
 }
 
-
-
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
 }
 
 .line {
     width: 60px;
     height: 4px;
-    background: #38bdf8;
+    background-color: #38bdf8;
     margin: 15px auto 30px;
-    border-radius: 2px;
 }
 
+/* Skills */
 .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
 }
 
 .skill-card {
-    background: #f1f5f9;
-    padding: 15px 20px;
-    border-radius: 8px;
-    font-weight: 500;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    font-weight: 600;
     transition: 0.3s;
 }
 
 .skill-card:hover {
-    background: #38bdf8;
+    background-color: #38bdf8;
     color: white;
 }
 
+/* Projects */
 .project-card {
-    background: #f8fafc;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    transition: 0.3s;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin: 20px auto;
+    max-width: 900px;
+    text-align: left;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
+/* Contact */
+.contact a {
+    color: #2563eb;
+    text-decoration: none;
 }
 
 footer {
-    background: #111827;
+    background-color: #111827;
     color: white;
     text-align: center;
     padding: 20px;
