@@ -7,6 +7,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
+
 // Scroll Animation
 window.addEventListener('scroll', function() {
     const sections = document.querySelectorAll('.about, .skills, .projects, .contact');
