@@ -1,17 +1,20 @@
+/* ===== GLOBAL STYLES ===== */
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    background-color: #f9fafb;
-    color: #1f2937;
+    padding: 0;
+    background: #f5f9ff;
+    color: #2c3e50;
     scroll-behavior: smooth;
 }
 
-/* Header */
+/* ===== HEADER ===== */
 header {
-    background-color: #111827;
+    background: #111827;
     padding: 15px 0;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -19,6 +22,7 @@ nav ul {
     display: flex;
     justify-content: center;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -26,97 +30,171 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
+    font-size: 17px;
     font-weight: 500;
+    transition: 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #38bdf8;
+    color: #60a5fa;
 }
 
-/* Home */
+/* ===== HOME SECTION ===== */
 .home {
-    background: linear-gradient(to right, #1f2937, #111827);
+    background: linear-gradient(135deg, #4facfe, #a78bfa);
     color: white;
     text-align: center;
-    padding: 120px 20px;
+    padding: 150px 20px;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.intro p {
+    font-size: 1.4rem;
+    margin: 15px 0 25px;
 }
 
 .highlight {
-    color: #38bdf8;
+    color: #ffd369;
 }
 
+/* ===== PROFILE IMAGE ===== */
+.profile-pic {
+    border-radius: 50%;
+    width: 160px;
+    margin: 25px 0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.08);
+}
+
+/* ===== BUTTON ===== */
 .btn {
-    display: inline-block;
-    margin-top: 20px;
-    background-color: #2563eb;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 8px;
+    background: white;
+    color: #4facfe;
+    padding: 12px 25px;
+    border-radius: 30px;
     text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #1d4ed8;
+    background: #ffd369;
+    color: #111;
 }
 
-/* Sections */
-section {
-    padding: 60px 20px;
+/* ===== COMMON SECTION STYLE ===== */
+.about, .skills, .projects, .contact {
+    padding: 90px 20px;
     text-align: center;
+    margin: 40px auto;
+    border-radius: 20px;
+    max-width: 1100px;
+    background: white;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    transition: 0.6s ease;
+}
+
+.about {
+    background: #ffffff;
+}
+
+.skills {
+    background: #f0f9ff;
+}
+
+.projects {
+    background: #f9f5ff;
+}
+
+.contact {
+    background: #eefcff;
+}
+
+/* ===== HEADINGS ===== */
+h2 {
+    font-size: 2.3rem;
+    margin-bottom: 10px;
 }
 
 .line {
-    width: 60px;
+    width: 90px;
     height: 4px;
-    background-color: #38bdf8;
-    margin: 15px auto 30px;
+    background: linear-gradient(to right, #4facfe, #a78bfa);
+    margin: 20px auto;
+    border-radius: 5px;
 }
 
-/* Skills */
+/* ===== SKILLS ===== */
 .skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
-    max-width: 800px;
-    margin: auto;
 }
 
 .skill-card {
     background: white;
-    padding: 15px;
-    border-radius: 10px;
-    border: 1px solid #e5e7eb;
-    font-weight: 600;
-    transition: 0.3s;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
 }
 
 .skill-card:hover {
-    background-color: #38bdf8;
+    transform: translateY(-8px);
+    background: #4facfe;
     color: white;
 }
 
-/* Projects */
+/* ===== PROJECTS ===== */
 .project-card {
     background: white;
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     margin: 20px auto;
-    max-width: 900px;
-    text-align: left;
+    max-width: 600px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
 }
 
-/* Contact */
-.contact a {
-    color: #2563eb;
-    text-decoration: none;
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
+/* ===== CONTACT ===== */
+.contact p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* ===== FOOTER ===== */
 footer {
-    background-color: #111827;
-    color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px 0;
+    background: #111827;
+    color: white;
+    margin-top: 40px;
+}
+
+/* ===== SCROLL ANIMATION ===== */
+.about, .skills, .projects, .contact {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.8s ease;
 }
