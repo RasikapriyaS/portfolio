@@ -2,14 +2,14 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fc;   /* Soft light background */
+    background-color: #87ceeb;   /* Soft light background */
     color: #2d3748;
     scroll-behavior: smooth;
 }
 
 /* HEADER */
 header {
-    background-color: #e9edff;   /* Light lavender */
+    background-color:3d3d3ff;   /* Light lavender */
     padding: 15px 0;
     position: sticky;
     top: 0;
@@ -81,7 +81,7 @@ nav ul li a:hover {
 .line {
     width: 60px;
     height: 4px;
-    background-color: #6c63ff;
+    background-color: #e0b0ff;
     margin: 20px auto;
     border-radius: 2px;
 }
@@ -95,7 +95,7 @@ nav ul li a:hover {
 }
 
 .skill-card {
-    background-color: #eef2ff;
+    background-color:#7c5786;
     padding: 18px 28px;
     border-radius: 12px;
     font-weight: 500;
@@ -104,7 +104,7 @@ nav ul li a:hover {
 
 /* PROJECTS */
 .project-card {
-    background-color: #f1f5ff;
+    background-color:#bdb3ff;
     padding: 25px;
     border-radius: 12px;
     margin-top: 20px;
