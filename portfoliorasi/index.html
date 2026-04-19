@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Rasikapriya | Data Analyst Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rasika Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <header>
@@ -21,49 +22,53 @@
     </nav>
 </header>
 
+<!-- HOME SECTION -->
 <section id="home" class="home">
     <div class="intro">
         <h1>Hi, I'm <span class="highlight">Rasikapriya</span></h1>
-        <p>A passionate <span class="highlight">Data Analyst</span> turning data into meaningful business insights.</p>
+        <p>Data Analyst | Power BI Developer | SQL & Python Enthusiast</p>
+        <p>Transforming raw data into actionable business insights.</p>
 
-        <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAzL3Jhd3BpeGVsb2ZmaWNlMjFfYW5fYW5pbWVfY3V0ZV9sb2ZpX2Flc3RoZXRpY193YWxscGFwZXJfb2ZfdXNpbl8yOWI0ZWZlOS1kMzVlLTQxOGQtYjg2OS04NzQ0MDdlN2I4YWEuanBn.jpg" 
-        class="profile-pic" 
-        alt="Rasikapriya Profile Picture"><br>
+        <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAzL3Jhd3BpeGVsb2ZmaWNlMjFfYW5fYW5pbWVfY3V0ZV9sb2ZpX2Flc3RoZXRpY193YWxscGFwZXJfb2ZfdXNpbl8yOWI0ZWZlOS1kMzVlLTQxOGQtYjg2OS04NzQ0MDdlN2I4YWEuanBn.jpg"
+             class="profile-pic"
+             alt="Rasikapriya Profile Picture"><br><br>
 
         <a href="#projects" class="btn">View My Work</a>
     </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about" class="about">
     <div class="content">
         <h2>About Me</h2>
         <div class="line"></div>
         <p>
-        I am a 23-year-old enthusiastic and detail-oriented Data Analyst with strong analytical 
-        and problem-solving skills. I specialize in transforming raw data into meaningful insights 
-        using tools like Power BI, SQL, and Python. I am passionate about data visualization, 
-        business intelligence, and decision-making through data-driven strategies. 
-        As a fresher, I bring strong adaptability, continuous learning mindset, and innovative project ideas.
+            I am a 23-year-old aspiring Data Analyst with hands-on experience in Power BI, SQL, and Python.
+            I specialize in data cleaning, Exploratory Data Analysis (EDA), dashboard development,
+            and KPI tracking. I enjoy converting complex datasets into meaningful visual insights
+            that support data-driven decision making. I am actively seeking entry-level opportunities
+            in Data Analytics and Business Intelligence.
         </p>
     </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills" class="skills">
-    <h2>Skills</h2>
+    <h2>Technical Skills</h2>
     <div class="line"></div>
     <div class="skills-container">
         <div class="skill-card">Power BI</div>
-        <div class="skill-card">SQL</div>
-        <div class="skill-card">Python (Pandas)</div>
-        <div class="skill-card">Excel</div>
-        <div class="skill-card">Data Visualization</div>
         <div class="skill-card">DAX</div>
-        <div class="skill-card">MySQL</div>
+        <div class="skill-card">SQL</div>
+        <div class="skill-card">Python (Pandas, Matplotlib)</div>
+        <div class="skill-card">Excel</div>
+        <div class="skill-card">Data Cleaning</div>
         <div class="skill-card">Exploratory Data Analysis</div>
         <div class="skill-card">Git & GitHub</div>
     </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects" class="projects">
     <h2>Projects</h2>
     <div class="line"></div>
@@ -71,58 +76,46 @@
     <!-- Project 1 -->
     <div class="project-card">
         <h3>Swiggy Instamart Sales & Outlet Performance Analysis – Power BI</h3>
-        <p>Domain: Business Intelligence</p>
-        <a href="#" class="btn" onclick="toggleDetails(event, 'project-details-1')">View Project</a>
-    </div>
-
-    <section id="project-details-1" class="project-details" style="display: none;">
         <p>
-        • Analyzed retail sales data to evaluate regional, category, and customer performance.<br>
-        • Developed KPI measures using DAX such as Total Revenue, Total Orders, and Average Order Value.<br>
-        • Built interactive dashboards with dynamic filtering to generate actionable business insights.
+            • Analyzed retail sales data to evaluate regional and category performance.<br>
+            • Developed KPIs using DAX such as Total Revenue, Total Orders, and Average Order Value.<br>
+            • Built interactive dashboards with dynamic filtering and drill-down features.<br>
+            • Identified high-performing outlets and revenue improvement opportunities.
         </p>
-    </section>
+    </div>
 
     <!-- Project 2 -->
     <div class="project-card">
-        <h3>College Event Participation Data Analysis</h3>
-        <p>Domain: SQL & Python</p>
-        <a href="#" class="btn" onclick="toggleDetails(event, 'project-details-2')">View Project</a>
-    </div>
-
-    <section id="project-details-2" class="project-details" style="display: none;">
+        <h3>College Event Management Data Analysis – SQL & Python</h3>
         <p>
-        • Analyzed event participation data of 300+ students improving report efficiency by 20%.<br>
-        • Used SQL for data extraction and structured query analysis.<br>
-        • Performed Exploratory Data Analysis (EDA) to identify participation trends.<br>
-        • Cleaned and structured raw data using Python (Pandas) and generated summary reports in Excel.
+            • Analyzed participation data of 300+ students to identify engagement trends.<br>
+            • Improved report generation efficiency by 20% using optimized SQL queries.<br>
+            • Performed Exploratory Data Analysis (EDA) using Python (Pandas).<br>
+            • Cleaned and structured raw data and generated summary reports in Excel.
         </p>
-    </section>
+    </div>
 
 </section>
 
-<script>
-function toggleDetails(event, id) {
-    event.preventDefault();
-    var detailsSection = document.getElementById(id);
-    if (detailsSection.style.display === 'none') {
-        detailsSection.style.display = 'block';
-    } else {
-        detailsSection.style.display = 'none';
-    }
-}
-</script>
-
+<!-- CONTACT -->
 <section id="contact" class="contact">
     <h2>Contact</h2>
     <div class="line"></div>
     <p>Email: <a href="mailto:rasikapriya440@gmail.com">rasikapriya440@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/rasikapriya-s-427085261/" target="_blank">LinkedIn Profile</a></p>
-    <p>GitHub: <a href="https://github.com/RasikapriyaS/" target="_blank">GitHub Profile</a></p>
+    <p>LinkedIn:
+        <a href="https://www.linkedin.com/in/rasikapriya-s-427085261/" target="_blank">
+            LinkedIn Profile
+        </a>
+    </p>
+    <p>GitHub:
+        <a href="https://github.com/RasikapriyaS/portfolio/blob/main/portfoliorasi/index.html" target="_blank">
+            GitHub Portfolio
+        </a>
+    </p>
 </section>
 
 <footer>
-    <p>&copy; 2026 Rasikapriya. All rights reserved.</p>
+    <p>© 2026 Rasikapriya | Data Analyst Portfolio</p>
 </footer>
 
 </body>
